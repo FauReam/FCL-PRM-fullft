@@ -73,15 +73,15 @@
 | 论文 | 关键结论 | 与本方向的关系 |
 |------|---------|:---:|
 | **FedAPM** (KDD 2025) | 理论上证明 partial model personalization 会**加剧** client drift | 直接支持 |
-| **FedDecorr** (TPAMI 2024) | 理论上证明 FL 数据异质性驱动维度坍缩 | 解释机制 |
+| **FedDecorr** (TPAMI 2023) | 理论上证明 FL 数据异质性驱动维度坍缩 | 解释机制 |
 | **FedBRICK** (AAAI 2026) | 冻结层数越多，structural bias 线性增长 | 定量预测 |
-| **SCAFFOLD** (ICML 2020) | client drift 随参数维度增大 | 反直觉：限制参数应减少 drift 但实际相反 |
-| **FedRCL** (CVPR 2024) | FL 中表征坍缩的度量与修复 | 方法论参考 |
-| **Momentum+SCAFFOLD** (ICLR 2024) | 动量消除异构性假设 | 理论工具 |
+| **SCAFFOLD** (ICML 2020) | client drift 源于数据异构性，提出控制变量修正 | 理论工具（注：原声称"drift 随参数维度增大"不准确）|
+| **FedRCL** (CVPR 2024) | FL 中表征坍缩的度量与修复（正式标题：Relaxed Contrastive Learning for FL） | 方法论参考 |
+| **Momentum Benefits Non-IID FL** (ICLR 2024) | 动量消除异构性假设（正式标题：Momentum Benefits Non-IID Federated Learning Simply and Provably） | 理论工具 |
 
 ### 空白
 
-这些工作都关注 "限制参数 → drift 增大" 这一事实，但**没有人从发散性质（信号 vs 噪声）角度给出理论解释**。这个空白恰好是你的切入点。
+这些工作各自独立讨论了 FL 中的 drift、维度坍缩、structural bias 等发散现象，但**没有人从发散性质（信号 vs 噪声）角度给出理论解释**。这个空白恰好是你的切入点。
 
 ---
 
